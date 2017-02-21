@@ -39,9 +39,20 @@ void push(node *pilha){
 	tam++;
 }
 
-
-
-
+node *pop(node *pilha){
+	if(pilha->prox == NULL)
+		printf("A pilha ja esta vazia\n");
+	else{
+		node *ultimo = pilha->prox, *penultimo = pilha;
+		while (ultimo->prox != NULL){
+			penultimo = ultimo;
+			ultimo = ultimo->prox;
+		}
+		penultimo->prox = NULL;
+		tam--;
+		return ultimo;
+	}
+}
 
 int main(){
 	node *pilha = (node *)malloc(sizeof(node));
