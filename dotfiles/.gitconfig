@@ -1,0 +1,11 @@
+[credential]
+	helper = cache
+[push]
+	default = simple
+[user]
+	email = matheus.carius37@gmail.com
+	name = Matheus Cariús
+[core]
+	editor = nvim
+[alias]
+	lg = log --graph --format=\"%C(auto)%h -%d %s %C(green)(%cr)%Creset %C(blue bold)<%an>\"
